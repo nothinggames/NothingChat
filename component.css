@@ -1,0 +1,127 @@
+:root{
+	--content-color: rgba(72, 82, 81, 0.5);
+}
+
+#content{
+	animation: 1s ease-out 0s 1 slideInFromRight;
+	display: flex;
+	flex-direction: column;
+	margin: 53px 300px;
+	padding: 0;
+	border-radius: 30px;
+	background-color: var(--content-color);
+	text-align: center;
+	min-height: 600px;
+}
+
+#input{
+	display: flex;
+	flex-direction: row;
+	background-color: var(--content-color);
+	margin: 7px 10px;
+	min-height: 30px;
+	border: 5px solid var(--content-color);
+	border-radius: 15px;
+	text-align: center;
+	margin: auto;
+	width: 95%;
+	margin-bottom: 5%;
+}
+
+#entry{
+	width: 90%;
+	margin: auto;
+	background: var(--content-color);
+	border: none;
+	outline: none;
+	resize: none;
+}
+
+#send{
+	border-radius: 15px;
+	outline: none;
+	border: 0;
+	color: rgb(148, 144, 144);
+	border-color: var(--content-color);
+	box-shadow: none;
+	font-size: 14px;
+	background-color: rgb(6, 29, 73);
+}
+#send:hover{
+	background-color: rgb(11, 47, 112);
+}
+
+#messages{
+	padding-left: 10%;
+	height: 80vh;;
+	overflow: auto;
+}
+
+li{
+	animation: 1.2s ease-in-out 0s 1 slideInFromLeft;
+}
+li span {
+	position: relative;
+	top: -15px;
+	left: -5px;
+}
+
+.message{
+	display: flex;
+	flex-direction: column;
+	background: rgba(72, 82, 81, 0.5);
+	border-radius: 20px;
+	margin: 10px;
+	min-height: 10px;
+}
+
+
+.message h5{
+	text-align: left;
+	padding-left: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+.message p{
+	text-align: left;
+	margin: 0;
+	position: relative;
+	top: -10px;
+	left: 10px;
+	overflow: hidden;
+	overflow-wrap: break-word;
+}
+
+.message:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 40px;
+	width: 0;
+	height: 0;
+	border: 11px solid transparent;
+	border-right-color: rgba(72, 82, 81, 0.5);
+	border-left: 0;
+	border-top: 0;
+	margin-top: -5.5px;
+	margin-left: -11px;
+}
+
+#settings{
+	position: -webkit-sticky; /* Safari */
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	width: 50px;
+	height: 50px;
+	background: rgba(63, 70, 69, 0.575);
+	border-radius: 15px;
+}
+#settings:hover{
+	background: rgba(117, 124, 123, 0.575);
+}
+
+
+
